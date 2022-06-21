@@ -39,7 +39,6 @@ std::unordered_map<std::string, ABCUCourse> LoadCoursesFromFile(const Path& file
 
         std::istringstream tokenStream {line};
 
-
         // By tokenizing the string like this, we prevent looping over the string multiple times
         // If we first split the string, and then filled the structure, that would be looping over things twice.
         // NOTE: This same concept could be applied to reading through the file. We could have read everything a token at
